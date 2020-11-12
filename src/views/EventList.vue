@@ -12,7 +12,8 @@
 
 <script>
     // @ is an alias to /src
-    import EventCard from '@/components/EventCard.vue'
+    import EventCard from '@/components/EventCard.vue';
+    import EventService from '@/services/EventService.js';
 
     export default {
         name: 'EventList',
@@ -21,31 +22,13 @@
         },
         data(){
             return {
-                events: [
-                    {
-                        id: 123456,
-                        category: 'Animal welfare',
-                        title: 'Cat Adoption Day',
-                        description: 'Find your new feline friend at this event.',
-                        location: 'Meow Town',
-                        date: 'January 28, 2022',
-                        time: '12:00',
-                        petsAllowed: true,
-                        organiser: 'Kat Laydee'
-                    },
-                    {
-                        id: 123457,
-                        category: 'Jazz Festival',
-                        title: 'Cape Town Jazz Festival',
-                        description: 'Join in at this Jazz festival.',
-                        location: 'Cape Town',
-                        date: 'January 29, 2022',
-                        time: '10:00',
-                        petsAllowed: false,
-                        organiser: 'Astro Media'
-                    },
-                ],
+                events: null,
             };  
+        },
+        created(){
+            EventService.getEvents()
+                .then(response => this.events = response.data)
+                .catch(error => console.log(error));
         }
     };
 </script>
