@@ -3,6 +3,7 @@
         <router-link :to="{ name: 'EventList' }">Events</router-link> |
         <router-link :to="{ name: 'About' }">About</router-link>
     </div>
+    <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />
 </template>
 
@@ -12,6 +13,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #eeeded;
     }
 
     #app {

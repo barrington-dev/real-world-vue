@@ -29,6 +29,36 @@
         "date": "July 22, 2022",
         "time": "11:00",
         "organizer": "Carey Wales"
+      },
+      {
+        "id": 910,
+        "category": "festival",
+        "title": "Summer Splash",
+        "description": "Chilled beach vibes and good music.",
+        "location": "Waterfront",
+        "date": "January 29, 2022",
+        "time": "18:00",
+        "organizer": "Roger Goode"
+      },
+      {
+        "id": 911,
+        "category": "community",
+        "title": "Car Wash",
+        "description": "Get your car clean and fresh.",
+        "location": "Cape Town",
+        "date": "January 26, 2022",
+        "time": "10:00",
+        "organizer": "Glen Lewis"
+      },
+      {
+        "id": 912,
+        "category": "music",
+        "title": "Khelani Live and Unlocked",
+        "description": "Catch Khelani on the main stage.",
+        "location": "Stellenbosch",
+        "date": "April 14, 2022",
+        "time": "20:00",
+        "organizer": "Coca Cola"
       }
     ]
   }
